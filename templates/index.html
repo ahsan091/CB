@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberburgs – Cybersecurity & Threat Intelligence</title>
+    <meta name="description"
+        content="Explore Cyberburgs – a cybersecurity hub offering threat simulations, red team tools, AI defenses, and expert analysis.">
+
+    <!-- 🌐 Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Cyberburgs",
+        "url": "https://cyberburgs.com",
+        "logo": "https://cyberburgs.com/static/img/logo.png",
+        "sameAs": [
+        "https://github.com/Cyberburgs",
+        "https://linkedin.com/company/cyberburgs",
+        "https://twitter.com/cyberburgs"
+        ]
+    }
+    </script>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="icon" type="image/x-icon" href="/static/img/Logo.ico">
+</head>
+
+<body>
+    <div class="particles" id="particles"></div>
+
+    {% include 'components/navbar.html' %}
+    {% include 'components/home.html' %}
+    {% include 'components/services.html' %}
+    {% include 'components/projects.html' %}
+    {% include 'components/insights.html' %}
+    {% include 'components/contact.html' %}
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>
